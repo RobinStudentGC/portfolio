@@ -1,0 +1,36 @@
+$(document).ready(function () {
+    let currentActive = 0;
+    $('#btn1').on('click', function () {
+        if (currentActive === 0) {
+            currentActive = 1;
+            $('.frontEndContent').slideDown();
+        }
+        else if (currentActive === 1) {
+            currentActive = 0;
+            $('.frontEndContent').slideUp();
+        }
+        else if (currentActive == 2) {
+            currentActive = 1;
+            $('.backEndContent').slideUp(function () {
+                $('.frontEndContent').slideDown();
+            });
+        }
+    });
+
+    $('#btn2').on('click', function () {
+        if (currentActive === 0) {
+            currentActive = 2;
+            $('.backEndContent').slideDown();
+        }
+        else if (currentActive === 1) {
+            currentActive = 2;
+            $('.frontEndContent').slideUp(function () {
+                $('.backEndContent').slideDown();
+            });
+        }
+        else if (currentActive == 2) {
+            currentActive = 0;
+            $('.backEndContent').slideUp();
+        }
+    });
+});
