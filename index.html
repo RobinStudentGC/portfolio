@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Code/CSS/MainPage/MainStyling.css" />
+    <!-- External Sources -->
+    <script src="External sources/JS/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="Code/JS/MainPage/MainJavaScript.js"></script>
+    <script src="Code/JS/MainPage/ShowInfo.js"></script>
+    <!-- internal css -->
+  </head>
+  <body>
+    <div class="loading">
+      <img src="Images/Spinner@4x-1.0s-800px-800px.gif" alt="" />
+    </div>
+
+    <div class="Global_Container">
+      <nav>
+        <div class="nav_Container">
+          <ul class="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <div class="hero">
+          <div class="innerHeroText">
+            <h1>Robin Miljoen</h1>
+            <p>My portfolio</p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div id="about" class="about">
+          <div class="tradeMark">
+            <img src="Images/discordpfp.png" alt="" />
+          </div>
+          <div class="aboutText_Container">
+            <div class="aboutTextTitle">
+              <h2>About Me:</h2>
+            </div>
+            <div class="aboutText">
+              <br />
+              <p>
+                Hello! My name is Robin Miljoen, I am 17 years old and currently
+                attending the course Software Development at the college
+                Graafschap in the Netherlands.
+              </p>
+              <br />
+              <p>
+                At Graafschap, I learned how to program with markup languages
+                and other programming languages. Besides that, I really enjoy
+                playing the piano and doing various activities outside of work
+                and school. I also really enjoy learning new things to do, which
+                is one of the main reasons I started programming and playing the
+                piano!
+              </p>
+              <br />
+              <p>
+                I am currently looking for an internship to gain more experience
+                in front-end and back-end Development. So please, if you have
+                any questions or want to contact me, feel free to do so in the
+                contact section at the bottom of this page!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="breakLineImg"></div>
+      <section>
+        <div class="whatIDo">
+          <div class="whatIDoTitle">
+            <h2>What I use:</h2>
+          </div>
+
+          <div class="buttons">
+            <button class="btn" id="btn1">Front-End</button>
+            <button class="btn" id="btn2">Back-End</button>
+            <button class="btn" id="btn3">Other</button>
+          </div>
+
+          <div class="frontEndContent" id="hiddenFront">
+            <div class="cards">
+              <div class="card">
+                <h3>HTML</h3>
+                <img src="Images/HTML.png" alt="HTML Icon" />
+                <p>
+                  HTML is the standard language for creating web pages. It
+                  provides the structure of a webpage and allows you to define
+                  elements like headings, paragraphs, images and links.
+                </p>
+              </div>
+              <div class="card">
+                <h3>CSS</h3>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                  alt="CSS Icon"
+                />
+                <p>
+                  CSS is used to style and layout web pages. It allows you to
+                  control the colors, fonts, spacing, and overall design of a
+                  website, making it visually appealing. This is what I used to
+                  give this website some color and styling!
+                </p>
+              </div>
+              <div class="card">
+                <h3>JavaScript</h3>
+                <img
+                  src="Images/JavaScript.png"
+                  alt="JavaScript Icon"
+                />
+                <p>
+                  JavaScript is a programming language that enables interactive
+                  and dynamic content on web pages. It is used for tasks like
+                  form validation, animations, and creating interactive user
+                  interfaces. It is the cause for most animations in this
+                  website!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="backEndContent" id="hiddenBack">
+            <div class="cards">
+              <div class="card">
+                <h3>PHP</h3>
+                <img src="Images/PHP.png" alt="PHP Icon" />
+                <p>
+                  I use PHP to create dynamic web pages and interact with
+                  databases. It allows me to build functional back-end systems
+                  for websites and applications.
+                </p>
+              </div>
+              <div class="card">
+                <h3>SQL</h3>
+                <img src="Images/SQL.png" alt="SQL Icon" />
+                <p>
+                  SQL helps me manage and manipulate databases efficiently. I
+                  use it to retrieve, insert, and update data, ensuring seamless
+                  integration with web applications.
+                </p>
+              </div>
+              <div class="card">
+                <h3>C#</h3>
+                <img src="Images/CSharp.png" alt="C# Icon" />
+                <p>
+                  I enjoy using C# (C Sharp) for building Windows applications
+                  and eventually exploring game development. It allows me to
+                  create robust and interactive software solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="otherContent" id="hiddenOther">
+            <div class="cards">
+              <div class="card">
+                <h3>Git</h3>
+                <img src="Images/Git.png" alt="Git Icon" />
+                <p>
+                  I use Git for version control and collaboration on coding
+                  projects. It helps me track changes, manage code versions, and
+                  work effectively with other developers. It also allows me to
+                  share my projects and activities on GitHub.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Visual Studio</h3>
+                <img
+                  src="Images/VisualStudio.png"
+                  alt="Visual Studio Icon"
+                />
+                <p>
+                  I use Visual Studio Code as my primary IDE for coding. It offers a
+                  powerful environment for writing, debugging, and testing code,
+                  making development more efficient.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
