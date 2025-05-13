@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HelldiverRoulette</title>
-    <link rel="stylesheet" href="css/MainStyling.css">
+    <link rel="stylesheet" href="css/MainStyling.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="js/JavaScript.js"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        <h1>Welcome to helldivers roullette!</h1>
+        <p>Click the button below to start the roulette!</p>
+        <button id="startButton">Start Roulette</button>
+      </div>
+
+      <div class="selectionSection" id="hiddenSelection">
+        <h2>What do you want to randomize?</h2>
+
+        <div class="options">
+          <div class="option">
+            <button type="button" id="strategems">Strategems</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="strategemsSection" id="hiddenStrategems">
+        <h2>Strategems</h2>
+        <p>Select the randomization option</p>
+        <div class="strategem">
+            <button class="BalancedBtn">Balanced</button>
+            <button class="HelldiveBtn">Helldive</button>
+        </div>
+        <div class="Message">
+          <p id="strategemBalanced" >Balanced consists of atleast 1 green, 1 blue and 2 red classed strategems.</p>
+          <p id="strategemHelldive">Helldive consists of all possible strategems. Meaning u can have any assortment of strategems.</p>
+        </div>
+      
+      </div>
+
+      <div class="rouletteContainer">
+        <div class="roulette" id="roulette">
+          <div class="rouletteItem" id="item1"><img id="img1" src="" alt=""></div>
+          <div class="rouletteItem" id="item2"><img id="img2" src="" alt=""></div>
+          <div class="rouletteItem" id="item3"><img id="img3" src="" alt=""></div>
+          <div class="rouletteItem" id="item4"><img id="img4" src="" alt=""></div>
+        </div>
+        <div class="Names">
+          <div class="Name" id="name1">Name 1</div>
+          <div class="Name" id="name2">Name 2</div>
+          <div class="Name" id="name3">Name 3</div>
+          <div class="Name" id="name4">Name 4</div>
+        </div>
+        <button id="spinButton">Randomize</button>
+      </div>
+    </div>
+  </body>
 </html>
