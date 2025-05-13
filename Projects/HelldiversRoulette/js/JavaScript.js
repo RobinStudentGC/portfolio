@@ -112,9 +112,7 @@ $(document).ready(function () {
                     randomIndex = Math.floor(Math.random() * images.length);
                 } while (usedIndexes.includes(randomIndex) && usedIndexes.length < images.length);
                 usedIndexes.push(randomIndex);
-
                 let selectedImage = images[randomIndex];
-                alert(selectedImage);
                 let itemId = "#img" + inList;
                 $(itemId).attr("src", selectedImage);
                 let strategemName = selectedImage.split("/").pop()
