@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#strategemBalanced").hide();
     $("#strategemHelldive").hide();
     $(".rouletteContainer").hide();
+    $(".images").hide();
 
     let mode = "none";
 
@@ -69,13 +70,13 @@ $(document).ready(function () {
     ];
 
     $("#startButton").on("click", function () {
-        $(".start").fadeOut(1000, function () {
-            $("#hiddenSelection").fadeIn(1000);
+        $(".start").fadeOut(500, function () {
+            $("#hiddenSelection").fadeIn(500);
         });
     });
     $("#strategems").on("click", function () {
-        $("#hiddenSelection").fadeOut(1000, function () {
-            $("#hiddenStrategems").fadeIn(1000);
+        $("#hiddenSelection").fadeOut(500, function () {
+            $("#hiddenStrategems").fadeIn(500);
         });
     });
     $(".BalancedBtn").on("mouseenter", function () {
@@ -90,20 +91,25 @@ $(document).ready(function () {
     });
 
     $(".BalancedBtn").on("click", function () {
-        $("#hiddenStrategems").fadeOut(1000, function () {
-            $(".rouletteContainer").fadeIn(1000);
+        $("#hiddenStrategems").fadeOut(500, function () {
+            $(".rouletteContainer").fadeIn(500);
         });
         mode = "balanced";
     });
 
     $(".HelldiveBtn").on("click", function () {
-        $("#hiddenStrategems").fadeOut(1000, function () {
-            $(".rouletteContainer").fadeIn(1000);
+        $("#hiddenStrategems").fadeOut(500, function () {
+            $(".rouletteContainer").fadeIn(500);
         });
         mode = "helldive";
     });
 
     $("#spinButton").on("click", function () {
+        $(".images").show();
+        // Ensure all image elements are visible before updating
+        for (let inList = 1; inList <= 4; inList++) {
+            $("#img" + inList).hide();
+        }
         if (mode === "helldive") {
             let usedIndexes = [];
             for (let inList = 1; inList <= 4; inList++) {
@@ -120,8 +126,8 @@ $(document).ready(function () {
                     .replace(/(_Stratagem_Icon|_Icon)?\.webp$/, "")
                     .replace(/_/g, " ");
                 let nameId = "#name" + inList;
+                $(itemId).show();
                 $(nameId).text(strategemName);
-                $(itemId).fadeIn(1000);
             }
         }
     });
