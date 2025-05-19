@@ -112,3 +112,22 @@ body {
     margin-left: 20px;
     min-width: 150px;
 }
+
+button {
+    background: transparent;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#spinButton {
+    margin-top: 20px;
+}
+
+#backToStart {
+    margin-top: 10px;
+}
